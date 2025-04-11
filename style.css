@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#map {
+    height: 500px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+#directions-panel {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+/* Input and button styles */
+input, button {
+    padding: 8px;
+    margin: 5px;
+}
+
+/* Hide the default routing instructions popup */
+.leaflet-routing-container {
+    display: none !important;
+}
+
+/* Optional: style the text inside the directions panel */
+#directions-panel h2,
+#directions-panel h3 {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+#directions-panel .leaflet-routing-alt {
+    border-top: 1px solid #ccc;
+    padding-top: 8px;
+    margin-top: 8px;
+}
+
+#directions-panel .leaflet-routing-directions {
+    margin-top: 5px;
+}
+
+#directions-panel .leaflet-routing-step {
+    font-size: 0.9em;
+    margin: 6px 0;
+}
